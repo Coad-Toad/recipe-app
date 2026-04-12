@@ -7,8 +7,10 @@ export type Step = {
   id: string;
   instruction: string;
   timerSeconds?: number;
+  timerMinutes?: number;
   timerLabel?: string;
   notes?: StepNote[];
+  usesIngredients?: string[];
 };
 
 export type Ingredient = {

@@ -33,11 +33,11 @@ export const FloatingTimerBar = () => {
     <div style={barStyle}>
       {activeTimers.map((t) => {
         const remaining = Math.max(0, t.endTime - now);
-        const seconds = Math.ceil(remaining / 1000);
+        const minutes = Math.ceil(remaining / 60000);
 
         return (
           <div key={t.id} style={{ marginBottom: 4 }}>
-             {t.label}: {seconds}s
+             {t.label}: {minutes} minutes
           </div>
         );
       })}
@@ -47,7 +47,7 @@ export const FloatingTimerBar = () => {
 
 const barStyle: React.CSSProperties = {
   position: "fixed",
-  bottom: 0,
+  top: 0,
   left: 0,
   right: 0,
   background: "#222",

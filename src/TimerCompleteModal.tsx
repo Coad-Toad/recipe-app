@@ -15,7 +15,7 @@ export const TimerCompleteModal = () => {
       <div style={modal}>
         {completedTimers.map((t) => (
           <div key={t.id} style={{ marginBottom: 10 }}>
-            <p>{t.label} is done!</p>
+            <p>{t.label} timer is done!</p>
             <button
               onClick={() => {
                 markNotified(t.id);

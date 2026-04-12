@@ -20,6 +20,36 @@ export const recipes: Recipe[] = [
         quantity: 40,
         unit: "g",
       },
+      {
+        name: "vanilla extract",
+        quantity: 1,
+        unit: "tsp",
+      },
+      {
+        name: "plain flour",
+        quantity: 136,
+        unit: "g",
+      },
+      {
+        name: "cocoa powder",
+        quantity: 24,
+        unit: "g",
+      },
+      {
+        name: "bicarbonate of soda",
+        quantity: 1,
+        unit: "tsp",
+      },
+      {
+        name: "dairy-free milk",
+        quantity: 1,
+        unit: "tbsp",
+      },
+      {
+        name: "dairy-free chocolate chips",
+        quantity: 75,
+        unit: "g",
+      },
     ],
     steps: [
       {
@@ -31,12 +61,21 @@ export const recipes: Recipe[] = [
         id: "1",
         instruction:
           "Put all of the ingredients in a bowl, except for the milk and the chocolate chips.",
+        usesIngredients: [
+          "dairy-free butter/margarine",
+          "caster sugar",
+          "light brown sugar",
+          "vanilla extract",
+          "plain flour",
+          "cocoa powder",
+          "bicarbonate of soda",
+        ],
       },
       {
         id: "2",
         instruction:
           "Mix it. I use a stand mixer and it takes about 6-7 minutes, with some poking and prodding here and there to keep it from sticking to the sides/the mixer attachment.",
-        timerSeconds: 10,
+        timerMinutes: 6,
         timerLabel: "Mixing the dough",
       },
       {
@@ -49,12 +88,13 @@ export const recipes: Recipe[] = [
             text: " It is very easy to overdo it, so start with a tablespoon, and if after a couple of minutes it doesn't seem to be doing much, add a bit more.",
           },
         ],
+        usesIngredients: ["dairy-free chocolate chips", "dairy-free milk"]
       },
       {
         id: "4",
         instruction:
           "Once it looks like it's starting to bind it should take about another 5 minutes or so until it becomes one big dough.",
-        timerSeconds: 10,
+        timerMinutes: 5,
         timerLabel: "Mixing the dough",
       },
       {
@@ -71,7 +111,7 @@ export const recipes: Recipe[] = [
       {
         id: "6",
         instruction: "Put the cookies in the oven for 9 minutes.",
-        timerSeconds: 10,
+        timerMinutes: 9,
         timerLabel: "Cookies in the oven",
         notes: [
           {
