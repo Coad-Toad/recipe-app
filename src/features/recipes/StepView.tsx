@@ -29,7 +29,7 @@ export const StepView = ({ step }: Props) => {
   return (
     <div>
       <div className="step-area">
-        <Typography sx={{ fontSize: 20, textAlign: "center" }}>{step.instruction}</Typography>
+        <Typography sx={{ fontSize: 20, textAlign: "left" }}>{step.instruction}</Typography>
 
         {step.notes?.map((n, i) => (
           <div className="notes-area">
@@ -41,7 +41,7 @@ export const StepView = ({ step }: Props) => {
       {step.timerMinutes && (
         <Button
           size="large"
-          sx={{ m: 4, textTransform: "none" }}
+          sx={{ m: 2, textTransform: "none" }}
           variant="contained"
           onClick={startTimer}
         >
