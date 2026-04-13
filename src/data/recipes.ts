@@ -128,7 +128,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: "creamy-garlic-chicken",
-    title: "Creamy Garlic Chicken and Rice",
+    title: "Creamy Garlic Chicken",
 
     ingredients: [
       { name: "basmati rice", quantity: 1, unit: " cup" },
