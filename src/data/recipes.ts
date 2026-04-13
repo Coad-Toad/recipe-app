@@ -88,7 +88,7 @@ export const recipes: Recipe[] = [
             text: " It is very easy to overdo it, so start with a tablespoon, and if after a couple of minutes it doesn't seem to be doing much, add a bit more.",
           },
         ],
-        usesIngredients: ["dairy-free chocolate chips", "dairy-free milk"]
+        usesIngredients: ["dairy-free chocolate chips", "dairy-free milk"],
       },
       {
         id: "4",
@@ -123,6 +123,175 @@ export const recipes: Recipe[] = [
             text: "You'll want to let them cool for a couple of minutes before moving them to a cooling tray/rack. Once they are keeping their shape they are done! You can eat them nice and hot, but do wait until they are solid first. They are much, much better than when they're too squishy. They'll still be nice and gooey in the centre, anyway!",
           },
         ],
+      },
+    ],
+  },
+  {
+    id: "creamy-garlic-chicken",
+    title: "Creamy Garlic Chicken and Rice",
+
+    ingredients: [
+      { name: "basmati rice", quantity: 1, unit: " cup" },
+      { name: "Vivera chicken-style fillets", quantity: 4, unit: "" },
+      { name: "salt", quantity: 1, unit: "tsp" },
+      { name: "black pepper", quantity: 0.5, unit: "tsp" },
+      { name: "garlic salt", quantity: 1, unit: "tsp" },
+      { name: "plain flour", quantity: 1, unit: "tsp" },
+      { name: "olive oil", quantity: 2, unit: "tbsp" },
+      { name: "vegan butter/margarine", quantity: 2, unit: "tbsp" },
+      { name: "medium white onion", quantity: 1, unit: "" },
+      { name: "garlic", quantity: 6, unit: "cloves" },
+      { name: "OXO vegan chicken stock", quantity: 1, unit: "cup" },
+      { name: "Oatly cream", quantity: 1, unit: "carton" },
+      {
+        name: "Violife grated cheese alternative",
+        quantity: 0.5,
+        unit: "cup",
+      },
+      { name: "parsley", quantity: 1, unit: "tbsp" },
+      { name: "green beans", quantity: 1, unit: "pack" },
+    ],
+
+    steps: [
+      {
+        id: "wash-rice",
+        instruction:
+          "Add a cup of basmati rice to a medium saucepan and rinse with cold water 3 times.",
+        usesIngredients: ["basmati rice"],
+      },
+      {
+        id: "cook-rice",
+        instruction:
+          "Pour 1.5 cups of water over the rice, add a sprinkle of salt and put on the hob at maximum heat with a lid on until it starts to boil.",
+        usesIngredients: ["basmati rice", "salt"],
+      },
+      {
+        id: "simmer-rice",
+        instruction:
+          "Once the water starts to boil, turn down to low (setting 3) and leave to simmer until all the water has been absorbed.",
+        usesIngredients: ["basmati rice"],
+      },
+      {
+        id: "stop-cooking-rice",
+        instruction:
+          "Once the water has all been absorbed, turn off the heat but leave the pan on the hob with the lid on until the rest of the meal is ready.",
+        usesIngredients: ["basmati rice"],
+      },
+
+      {
+        id: "season-chicken",
+        instruction: "Season the chicken-style fillets with salt and pepper.",
+        usesIngredients: [
+          "Vivera chicken-style fillets",
+          "salt",
+          "black pepper",
+        ],
+      },
+      {
+        id: "coat-chicken",
+        instruction:
+          "Combine the garlic salt and flour in a bowl and dredge each fillet in the mixture.",
+        usesIngredients: [
+          "Vivera chicken-style fillets",
+          "garlic salt",
+          "plain flour",
+        ],
+      },
+      {
+        id: "heat-pan",
+        instruction:
+          "Heat the olive oil and 1 tbsp of butter/margarine in a frying pan over medium heat (setting 6).",
+        usesIngredients: ["olive oil", "vegan butter/margarine"],
+      },
+      {
+        id: "cook-chicken",
+        instruction:
+          "Add the coated chicken-style fillets to the pan and cook until golden.",
+        timerMinutes: 2,
+        timerLabel: "Fry fillets (side 1)",
+        usesIngredients: ["Vivera chicken-style fillets"],
+      },
+      {
+        id: "flip-chicken",
+        instruction: "Flip the fillets and cook the other side until golden.",
+        timerMinutes: 2,
+        timerLabel: "Fry fillets (side 2)",
+        usesIngredients: ["Vivera chicken-style fillets"],
+      },
+      {
+        id: "remove-chicken",
+        instruction: "Remove fillets from the pan and set aside.",
+        notes: [
+          {
+            type: "tip",
+            text: "At this stage you can either put the fillets in the warming drawer on a plate with some kitchen roll to dry out further, or put them in the air fryer for 5 minutes at 200°C to get them super crispy!",
+          },
+        ],
+      },
+      {
+        id: "melt-butter",
+        instruction:
+          "Add 1 tbsp vegan butter/margine to the pan and let it melt.",
+        usesIngredients: ["vegan butter/margarine"],
+      },
+      {
+        id: "chop-aromatics",
+        instruction:
+          "Finely dice the onion and 3 cloves of garlic, smash the other 3 cloves with the side of the knife.",
+        usesIngredients: ["garlic", "medium white onion"],
+      },
+      {
+        id: "cook-aromatics",
+        instruction:
+          "Add the onion and garlic to the pan and cook until fragrant.",
+        timerMinutes: 3,
+        timerLabel: "Cook aromatics",
+        usesIngredients: ["garlic", "medium white onion"],
+      },
+      {
+        id: "add-stock",
+        instruction:
+          "Boil the kettle and make 1 cup of chicken stock using 1 stock cube. Pour into the pan with the onion and garlic and stir to combine, let it simmer and reduce by about half.",
+        timerMinutes: 5,
+        timerLabel: "Reduce broth",
+        usesIngredients: ["OXO vegan chicken stock"],
+      },
+      {
+        id: "add-cream",
+        instruction:
+          "Stir the Oatly cream into the pan and bring to a gentle simmer.",
+        usesIngredients: ["Oatly cream"],
+        timerMinutes: 3,
+        timerLabel: "Simmer sauce",
+      },
+      {
+        id: "add-cheese",
+        instruction:
+          "Add the grated cheese alternative and stir, waiting for it to melt into the sauce.",
+        usesIngredients: ["Violife grated cheese alternative"],
+        timerMinutes: 3,
+        timerLabel: "Melt cheese",
+      },
+      {
+        id: "return-chicken",
+        instruction:
+          "Add the fillets back into the pan and coat in the sauce. Let the sauce simmer for a few more minutes until it thickens.",
+        usesIngredients: ["Vivera chicken-style fillets"],
+                timerMinutes: 3,
+        timerLabel: "Thicken sauce",
+
+      },
+      {
+        id: "green-beans",
+        instruction: "While the sauce is thickening, steam the green beans over a small saucepan of boiling water.",
+        timerMinutes: 3,
+        timerLabel: "Steam the green beans",
+        usesIngredients: ["green beans"],
+      },
+      {
+        id: "plate-up",
+        instruction: "Fluff the cooked rice with a fork and plate with the fillets, sauce and green beans. Sprinkle with parsley and serve 💙",
+        usesIngredients: ["parsley"],
       },
     ],
   },

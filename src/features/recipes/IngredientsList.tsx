@@ -42,11 +42,10 @@ export const IngredientsList = ({
                   <p
                     style={{
                       fontWeight: isHighlighted ? "bold" : "normal",
-                      color: isHighlighted ? "var(--accent)" : "var(--text)"
+                      color: isHighlighted ? "var(--accent)" : "var(--text)",
                     }}
                   >
-                    {n.quantity}
-                    {n.unit} {n.name}
+                    {n.quantity} {n.unit} {n.name}
                   </p>
                 </div>
               );
