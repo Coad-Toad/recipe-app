@@ -277,21 +277,176 @@ export const recipes: Recipe[] = [
         instruction:
           "Add the fillets back into the pan and coat in the sauce. Let the sauce simmer for a few more minutes until it thickens.",
         usesIngredients: ["Vivera chicken-style fillets"],
-                timerMinutes: 3,
+        timerMinutes: 3,
         timerLabel: "Thicken sauce",
-
       },
       {
         id: "green-beans",
-        instruction: "While the sauce is thickening, steam the green beans over a small saucepan of boiling water.",
+        instruction:
+          "While the sauce is thickening, steam the green beans over a small saucepan of boiling water.",
         timerMinutes: 3,
         timerLabel: "Steam the green beans",
         usesIngredients: ["green beans"],
       },
       {
         id: "plate-up",
-        instruction: "Fluff the cooked rice with a fork and plate with the fillets, sauce and green beans. Sprinkle with parsley and serve 💙",
+        instruction:
+          "Fluff the cooked rice with a fork and plate with the fillets, sauce and green beans. Sprinkle with parsley and serve 💙",
         usesIngredients: ["parsley"],
+      },
+    ],
+  },
+  {
+    id: "beyond-beef-balti",
+    title: "Beyond Beef Balti",
+
+    ingredients: [
+      { name: "cardamom pods", quantity: 2, unit: "" },
+      { name: "cumin seeds", quantity: 0.25, unit: "tsp" },
+      { name: "black peppercorns", quantity: 6, unit: "" },
+      { name: "cloves", quantity: 3, unit: "" },
+      { name: "coriander seeds", quantity: 1, unit: "tsp" },
+      { name: "vegetable oil", quantity: 4, unit: "tsp" },
+      { name: "medium red onion", quantity: 1, unit: "" },
+      { name: "garlic", quantity: 4, unit: "cloves" },
+      { name: "ginger", quantity: 1, unit: "half inch piece" },
+      { name: "salt", quantity: 1, unit: "pinch" },
+      { name: "Beyond Meat steak pieces", quantity: 1, unit: "160g pack" },
+      { name: "garam masala", quantity: 0.25, unit: "tsp" },
+      { name: "turmeric", quantity: 0.25, unit: "tsp" },
+      { name: "cinnamon", quantity: 0.25, unit: "tsp" },
+      { name: "paprika", quantity: 0.5, unit: "tsp" },
+      { name: "cayenne", quantity: 0.25, unit: "tsp" },
+      { name: "chopped tomatoes", quantity: 1, unit: "tin" },
+      { name: "lemon juice", quantity: 1, unit: "tsp" },
+      { name: "red bell pepper", quantity: 1, unit: "" },
+      { name: "date syrup", quantity: 0.5, unit: "tbsp" },
+    ],
+
+    steps: [
+      {
+        id: "make-spice-mix",
+        instruction:
+          "Scrape the seeds from the cardamom pods and add into a small bowl with the other fresh spices.",
+        usesIngredients: [
+          "coriander seeds",
+          "cumin seeds",
+          "cardamom pods",
+          "cloves",
+          "black peppercorns",
+        ],
+      },
+      {
+        id: "heat-oil",
+        instruction:
+          "Heat 2 tsps of oil in a large pan over medium heat (Setting 6) and add the whole spices, cooking until fragrant.",
+        usesIngredients: ["vegetable oil"],
+        timerMinutes: 3,
+        timerLabel: "Cook spices",
+      },
+      {
+        id: "cook-onion",
+        instruction:
+          "Finely dice the onion and garlic cloves and add to the pan with the spices. Grate the ginger into the pan and add a pinch of salt. Mix well and cook until the onion is translucent.",
+        timerMinutes: 12,
+        timerLabel: "Cook aromatics",
+        usesIngredients: ["medium red onion", "garlic", "ginger", "salt"],
+      },
+      {
+        id: "cook-beyond",
+        instruction:
+          "While the onion is cooking, heat 1 tsp oil in a small frying pan and add the Beyond beef pieces. Sprinkle with garam masala and fry until lightly browned.",
+        timerMinutes: 3,
+        timerLabel: "Fry beef pieces",
+        usesIngredients: [
+          "vegetable oil",
+          "Beyond Meat steak pieces",
+          "garam masala",
+        ],
+      },
+      {
+        id: "cook-tomatoes",
+        instruction:
+          "Add the ground spices and chopped tomatoes to the pan with the onions and cook until the tomatoes are saucy.",
+        usesIngredients: ["turmeric", "cinnamon", "paprika", "cayenne", "chopped tomatoes"],
+        timerMinutes: 4,
+        timerLabel: "Cook tomatoes",
+      },
+      {
+        id: "blend-tomato-mixure",
+        instruction:
+          "Combine the tomato mixture in a blender with half a cup of water and 1 tsp lemon juice. Add back to the pan along with the beef pieces. Cover and cook over a low medium heat (Setting 4/5).",
+        usesIngredients: ["lemon juice"],
+        timerMinutes: 15,
+        timerLabel: "Cook sauce",
+      },
+      {
+        id: "blister-peppers",
+        instruction:
+          "While the sauce is cooking, add 1 tsp oil to a small frying pan and chop the red pepper. Add it to the oil and fry until the skin starts to blister.",
+        usesIngredients: ["vegetable oil", "red bell pepper"],
+        timerMinutes: 3,
+        timerLabel: "Blister peppers",
+      },
+      {
+        id: "finish-sauce",
+        instruction:
+          "Once the 'Cook sauce' timer is complete, add the peppers and date syrup to the sauce and cook for a another 10 minutes with the lid on the pan.",
+        usesIngredients: ["date syrup"],
+        timerMinutes: 10,
+        timerLabel: "Finish cooking sauce",
+      },
+    ],
+  },
+  {
+    id: "kay-style-pilau-rice",
+    title: "Kay Style Pilau Rice",
+
+    ingredients: [
+      { name: "basmati rice", quantity: 1, unit: "cup" },
+      { name: "water", quantity: 1.5, unit: "cups" },
+      { name: "salt", quantity: 1, unit: "pinch" },
+      { name: "cardamom pods", quantity: 5, unit: "" },
+      { name: "saffron", quantity: 1, unit: "pinch" },
+      { name: "turmeric", quantity: 1, unit: "tsp" },
+    ],
+
+    steps: [
+      {
+        id: "wash-rice",
+        instruction:
+          "Add the basmati rice to a medium saucepan and rinse with cold water 3 times.",
+        usesIngredients: ["basmati rice"],
+      },
+      {
+        id: "add-water-and-spices",
+        instruction:
+          "Add the water, salt, crushed cardamom pods, saffron and turmeric to the rice and stir gently.",
+        usesIngredients: [
+          "basmati rice",
+          "water",
+          "salt",
+          "cardamom pods",
+          "saffron",
+          "turmeric",
+        ],
+      },
+      {
+        id: "bring-to-boil",
+        instruction:
+          "Place the pan on the hob at maximum heat with a lid on until it starts to boil.",
+      },
+      {
+        id: "simmer-rice",
+        instruction:
+          "Once boiling, turn the heat down low (Setting 3) and let it simmer until all the water has been absorbed.",
+        timerMinutes: 5,
+        timerLabel: "Simmer rice",
+      },
+      {
+        id: "rest-rice",
+        instruction:
+          "Turn off the heat but leave the pan covered on the hob until the rest of the meal is ready.",
       },
     ],
   },
