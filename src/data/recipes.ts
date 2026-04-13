@@ -136,12 +136,12 @@ export const recipes: Recipe[] = [
       { name: "salt", quantity: 1, unit: "tsp" },
       { name: "black pepper", quantity: 0.5, unit: "tsp" },
       { name: "garlic salt", quantity: 1, unit: "tsp" },
-      { name: "plain flour", quantity: 1, unit: "tsp" },
+      { name: "plain flour", quantity: 4, unit: "tbsp" },
       { name: "olive oil", quantity: 2, unit: "tbsp" },
       { name: "vegan butter/margarine", quantity: 2, unit: "tbsp" },
       { name: "medium white onion", quantity: 1, unit: "" },
       { name: "garlic", quantity: 6, unit: "cloves" },
-      { name: "OXO vegan chicken stock", quantity: 1, unit: "cup" },
+      { name: "OXO vegan chicken stock cube", quantity: 1, unit: "" },
       { name: "Oatly cream", quantity: 1, unit: "carton" },
       {
         name: "Violife grated cheese alternative",
@@ -254,7 +254,7 @@ export const recipes: Recipe[] = [
           "Boil the kettle and make 1 cup of chicken stock using 1 stock cube. Pour into the pan with the onion and garlic and stir to combine, let it simmer and reduce by about half.",
         timerMinutes: 5,
         timerLabel: "Reduce broth",
-        usesIngredients: ["OXO vegan chicken stock"],
+        usesIngredients: ["OXO vegan chicken stock cube"],
       },
       {
         id: "add-cream",
