@@ -26,7 +26,7 @@ export const CookMode = ({ recipe, onBack }: Props) => {
 
       <StepView step={step} />
 
-      <div>
+      <div className="navigation-buttons">
         <IconButton
           onClick={() => setIndex((i) => i - 1)}
           disabled={index === 0}
