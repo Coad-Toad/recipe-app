@@ -54,7 +54,7 @@ export const recipes: Recipe[] = [
     steps: [
       {
         id: "0",
-        instruction: "Pre-heat the oven to 180°C fan/200°C/400°F/gas mark 6.",
+        instruction: "Pre-heat the oven to 200°C (180°C for fan ovens).",
       },
 
       {
