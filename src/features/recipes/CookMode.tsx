@@ -31,14 +31,15 @@ export const CookMode = ({ recipe, onBack }: Props) => {
           onClick={() => setIndex((i) => i - 1)}
           disabled={index === 0}
           color={"primary"}
+          sx={{ bgcolor: `var(--social-bg)`, mr: 2 }}
         >
           <ArrowBackIosIcon></ArrowBackIosIcon>
         </IconButton>
-
         <IconButton
           onClick={() => setIndex((i) => i + 1)}
           disabled={index === recipe.steps.length - 1}
           color={"primary"}
+          sx={{ bgcolor: `var(--social-bg)` }}
         >
           <ArrowForwardIosIcon></ArrowForwardIosIcon>
         </IconButton>

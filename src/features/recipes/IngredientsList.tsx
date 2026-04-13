@@ -15,7 +15,7 @@ export const IngredientsList = ({
   ingredients,
   highlightedIngredients,
 }: Props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <>
