@@ -760,7 +760,7 @@ export const recipes: Recipe[] = [
         id: "air-fry-meatballs",
 
         instruction:
-          "Transfer the meatballs to a drawer in the air fryer and fry at 200 for 10 minutes.",
+          "Transfer the meatballs to a drawer in the air fryer and fry at 200°C for 10 minutes.",
 
         notes: [
           {
