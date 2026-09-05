@@ -19,7 +19,15 @@ export const IngredientsList = ({
 
   return (
     <>
-      <IconButton onClick={() => setIsOpen(!isOpen)} color={"primary"}>
+      <IconButton
+        sx={{
+          borderRadius: "8px",
+          px: 2,
+          py: 1,
+        }}
+        onClick={() => setIsOpen(!isOpen)}
+        color={"primary"}
+      >
         {!isOpen ? (
           <>
             <ExpandMore></ExpandMore>

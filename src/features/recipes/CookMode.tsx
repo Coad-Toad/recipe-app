@@ -44,7 +44,15 @@ export const CookMode = ({ recipe, onBack }: Props) => {
           <ArrowForwardIosIcon></ArrowForwardIosIcon>
         </IconButton>
       </div>
-      <IconButton onClick={onBack} color={"primary"}>
+      <IconButton
+        sx={{
+          borderRadius: "8px",
+          px: 2,
+          py: 1,
+        }}
+        onClick={onBack}
+        color={"primary"}
+      >
         <ArrowBackIcon></ArrowBackIcon>
         <Typography sx={{ ml: 2 }}>Back to recipes</Typography>
       </IconButton>
