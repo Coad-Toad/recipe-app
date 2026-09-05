@@ -368,7 +368,13 @@ export const recipes: Recipe[] = [
         id: "cook-tomatoes",
         instruction:
           "Add the ground spices and chopped tomatoes to the pan with the onions and cook until the tomatoes are saucy.",
-        usesIngredients: ["turmeric", "cinnamon", "paprika", "cayenne", "chopped tomatoes"],
+        usesIngredients: [
+          "turmeric",
+          "cinnamon",
+          "paprika",
+          "cayenne",
+          "chopped tomatoes",
+        ],
         timerMinutes: 4,
         timerLabel: "Cook tomatoes",
       },
@@ -447,6 +453,112 @@ export const recipes: Recipe[] = [
         id: "rest-rice",
         instruction:
           "Turn off the heat but leave the pan covered on the hob until the rest of the meal is ready.",
+      },
+    ],
+  },
+  {
+    id: "chicken-tacos",
+    title: "Chicken Tacos with Mango Salsa",
+
+    ingredients: [
+      { name: "mango", quantity: 1, unit: "" },
+      { name: "red onion", quantity: 0.5, unit: "" },
+      { name: "cucumber", quantity: 1, unit: "" },
+      { name: "cherry tomatoes", quantity: 5, unit: "" },
+      { name: "jalapeño", quantity: 1, unit: "" },
+      { name: "fresh coriander", quantity: 0.5, unit: "cups" },
+      { name: "limes", quantity: 3, unit: "" },
+      { name: "sea salt", quantity: 1, unit: "pinch" },
+      { name: "black pepper", quantity: 1, unit: "pinch" },
+      { name: "vegetable oil", quantity: 1, unit: "tbsp" },
+      {
+        name: "Linda McCartney Vegan Shredded Chicken",
+        quantity: 260,
+        unit: "g",
+      },
+      { name: "mild chilli powder", quantity: 1.5, unit: "tsp" },
+      { name: "ground cumin", quantity: 1, unit: "tsp" },
+      { name: "chilli flakes", quantity: 1, unit: "tsp" },
+      { name: "dried oregano", quantity: 0.5, unit: "tsp" },
+      { name: "garlic powder", quantity: 0.5, unit: "tsp" },
+      { name: "onion salt", quantity: 0.25, unit: "tsp" },
+      { name: "brown sugar", quantity: 1, unit: "tsp" },
+      {
+        name: "OXO meat free chicken flavour stock cube",
+        quantity: 1,
+        unit: "",
+      },
+      { name: "avocado", quantity: 1, unit: "" },
+      { name: "soft taco shells", quantity: 12, unit: "" },
+    ],
+
+    steps: [
+      {
+        id: "make-salsa",
+        instruction:
+          "Finely dice the mango, onion, cucumber, tomatoes, jalapeño and coriander and add to a large bowl. Add the juice of the limes, season with salt and pepper and mix.",
+        usesIngredients: [
+          "mango",
+          "red onion",
+          "cucumber",
+          "cherry tomatoes",
+          "jalapeño",
+          "fresh coriander",
+          "limes",
+          "sea salt",
+          "black pepper",
+        ],
+      },
+      {
+        id: "cook-chicken",
+        instruction:
+          "Add the oil to a frying pan on a medium heat and fry the chicken pieces.",
+        notes: [
+          {
+            type: "tip",
+            text: "No need to defrost the chicken pieces, you can tip them right in the pan at about a 6.",
+          },
+        ],
+        usesIngredients: [
+          "vegetable oil",
+          "Linda McCartney Vegan Shredded Chicken",
+        ],
+      },
+      {
+        id: "make-taco-seasoning",
+        instruction:
+          "Add all the taco seasoning ingredients to a small bowl with the crumbled stock cube and mix. Add the seasoning to the chicken in the frying pan and cook for 7 minutes.",
+        usesIngredients: [
+          "mild chilli powder",
+          "ground cumin",
+          "chilli flakes",
+          "dried oregano",
+          "garlic powder",
+          "onion salt",
+          "brown sugar",
+          "OXO meat free chicken flavour stock cube",
+        ],
+        timerMinutes: 7,
+        timerLabel: "Fry shredded chicken",
+      },
+      {
+        id: "make-guac",
+        instruction:
+          "Mash the avocado in a small bowl and season with salt and pepper.",
+        usesIngredients: ["avocado", "sea salt", "black pepper"],
+      },
+
+      {
+        id: "heat-taco-shells",
+        instruction:
+          "Remove all packaging and heat the taco shells in the microwave for 30 seconds.",
+        usesIngredients: ["soft taco shells"],
+        notes: [
+          {
+            type: "tip",
+            text: "To assemble the tacos, spread some guacamole on the inside of the taco shell and add salsa and shredded chicken.",
+          },
+        ],
       },
     ],
   },
