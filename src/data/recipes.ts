@@ -562,4 +562,275 @@ export const recipes: Recipe[] = [
       },
     ],
   },
+  {
+    id: "black-bean-meatballs-gravy",
+
+    title: "Black Bean Meatballs with Spiced Gravy",
+
+    ingredients: [
+      {
+        name: "black beans",
+        quantity: 1,
+        unit: "can",
+      },
+      {
+        name: "sunflower seeds",
+        quantity: 0.25,
+        unit: "cup",
+      },
+      {
+        name: "oats",
+        quantity: 0.5,
+        unit: "cup",
+      },
+      {
+        name: "tomato paste",
+        quantity: 4,
+        unit: "tbsp",
+      },
+      {
+        name: "garlic",
+        quantity: 2,
+        unit: "cloves",
+      },
+      {
+        name: "onion",
+        quantity: 0.5,
+        unit: "",
+      },
+      {
+        name: "ground flax seeds",
+        quantity: 2,
+        unit: "tbsp",
+      },
+      {
+        name: "onion salt",
+        quantity: 2,
+        unit: "tsp",
+      },
+      {
+        name: "garlic powder",
+        quantity: 2,
+        unit: "tsp",
+      },
+      {
+        name: "oregano",
+        quantity: 2,
+        unit: "tsp",
+      },
+      {
+        name: "ground cumin",
+        quantity: 2,
+        unit: "tsp",
+      },
+      {
+        name: "smoked paprika",
+        quantity: 1,
+        unit: "tsp",
+      },
+      {
+        name: "red pepper flakes",
+        quantity: 0.5,
+        unit: "tsp",
+      },
+      {
+        name: "sea salt",
+        quantity: 1,
+        unit: "pinch",
+      },
+      {
+        name: "black pepper",
+        quantity: 1,
+        unit: "pinch",
+      },
+      {
+        name: "vegetable oil",
+        quantity: 2.5,
+        unit: "tbsp",
+      },
+      {
+        name: "vegetable broth",
+        quantity: 1.5,
+        unit: "cups",
+      },
+      {
+        name: "Oatly plant cream",
+        quantity: 0.33,
+        unit: "cup",
+      },
+      {
+        name: "fresh ginger",
+        quantity: 0.5,
+        unit: "tsp",
+      },
+      {
+        name: "curry powder",
+        quantity: 3,
+        unit: "tsp",
+      },
+      {
+        name: "turmeric",
+        quantity: 1,
+        unit: "tsp",
+      },
+      {
+        name: "nutmeg",
+        quantity: 0.5,
+        unit: "tsp",
+      },
+      {
+        name: "brown sugar",
+        quantity: 1,
+        unit: "tsp",
+      },
+      {
+        name: "cornstarch",
+        quantity: 1,
+        unit: "tbsp",
+      },
+      {
+        name: "fresh parsley",
+        quantity: 1,
+        unit: "pinch",
+      },
+    ],
+
+    steps: [
+      {
+        id: "prepare-meatball-mixture",
+
+        instruction:
+          "Drain the water from the beans, finely chop the onion and garlic cloves, and add along with 2 tbsp of tomato paste, ½ tbsp onion salt, 1 tsp garlic powder, 1 tsp oregano, 1 tsp cumin, ½ tsp smoked paprika ¼ tsp pepper flakes and the other selected ingredients to the blender and pulse a couple of times. Scrape down the sides and pulse again. Repeat for about one minute or until the mixture sticks together in a thick paste.",
+
+        usesIngredients: [
+          "black beans",
+          "sunflower seeds",
+          "oats",
+          "tomato paste",
+          "garlic",
+          "onion",
+          "ground flax seeds",
+          "onion salt",
+          "garlic powder",
+          "oregano",
+          "ground cumin",
+          "smoked paprika",
+          "red pepper flakes",
+          "sea salt",
+          "black pepper",
+        ],
+
+        notes: [
+          {
+            type: "tip",
+            text: "If the blender is struggling you can add water a teaspoon at a time to the mixture to loosen it up.",
+          },
+        ],
+      },
+      {
+        id: "shape-meatballs",
+
+        instruction:
+          "Roll the mixture into approximately 15 balls, using around 1 tablespoon of mixture for each meatball.",
+
+        notes: [
+          {
+            type: "warning",
+            text: "If the mixture is too wet to shape, add a little more oats or chill it in the fridge for 30 to 60 minutes.",
+          },
+          {
+            type: "tip",
+            text: "Lightly oil your hands to prevent the mixture from sticking.",
+          },
+        ],
+      },
+      {
+        id: "fry-meatballs",
+
+        instruction:
+          "Heat the vegetable oil in a large frying pan over medium heat. Fry the meatballs, turning occasionally, until lightly browned on all sides.",
+
+        timerMinutes: 7,
+
+        timerLabel: "Fry meatballs",
+
+        usesIngredients: ["vegetable oil"],
+      },
+      {
+        id: "air-fry-meatballs",
+
+        instruction:
+          "Transfer the meatballs to a drawer in the air fryer and fry at 200 for 10 minutes.",
+
+        notes: [
+          {
+            type: "reassurance",
+            text: "The combination of pan-frying and air-frying helps create a crispy exterior.",
+          },
+        ],
+      },
+      {
+        id: "start-gravy",
+
+        instruction:
+          "While the meatballs are in the air fryer, add the remaining 2 tbsp tomato paste and ⅓ cup Oatly plant cream to the frying pan. Whisk until smooth, then slowly add 1½ cups vegetable broth while continuing to whisk.",
+
+        usesIngredients: [
+          "tomato paste",
+          "Oatly plant cream",
+          "vegetable broth",
+        ],
+      },
+      {
+        id: "season-gravy",
+
+        instruction:
+          "Add ½ tsp fresh ginger, 3 tsp curry powder, 1½ tsp onion salt, 1 tsp garlic powder, 1 tsp oregano, 1 tsp ground cumin, 1 tsp turmeric, ½ tsp nutmeg, ½ tsp smoked paprika, ¼ tsp red pepper flakes, and 1 tsp brown sugar. Stir well.",
+
+        usesIngredients: [
+          "fresh ginger",
+          "curry powder",
+          "onion salt",
+          "garlic powder",
+          "oregano",
+          "ground cumin",
+          "turmeric",
+          "nutmeg",
+          "smoked paprika",
+          "red pepper flakes",
+          "brown sugar",
+        ],
+      },
+      {
+        id: "simmer-gravy",
+
+        instruction:
+          "Bring the gravy to a boil, then reduce the heat and allow it to simmer.",
+
+        timerMinutes: 11,
+
+        timerLabel: "Simmer gravy",
+      },
+      {
+        id: "thicken-gravy",
+
+        instruction:
+          "Mix 1 tbsp cornstarch with a little water to make a smooth slurry. Stir it into the gravy and continue simmering until thickened.",
+
+        timerMinutes: 3,
+
+        timerLabel: "Thicken gravy",
+
+        usesIngredients: ["cornstarch"],
+      },
+      {
+        id: "serve",
+
+        instruction:
+          "Serve the baked vegan meatballs with the spiced gravy and garnish with fresh parsley.",
+
+        usesIngredients: ["fresh parsley"],
+      },
+    ],
+  },
 ];
