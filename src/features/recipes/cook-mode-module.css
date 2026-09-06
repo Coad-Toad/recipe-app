@@ -1,7 +1,31 @@
-.recipe-dogogie {
-      padding-top: 60px;
-      line-height: 1em;
+.dogogie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto 1rem;
 }
-.navigation-buttons {
-      padding-bottom: 2rem;
+
+.speech-bubble {
+  position: relative;
+  background: white;
+  border-radius: 18px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: white;
+  transform: translateX(-50%) rotate(45deg);
+}
+.dogogie {
+  width: min(180px, 45vw);
+  height: auto;
 }

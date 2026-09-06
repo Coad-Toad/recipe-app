@@ -11,8 +11,11 @@ type Props = {
 export const RecipeList = ({ recipes, onSelect }: Props) => {
   return (
     <div>
-      <div className="recipe-header">
-        <DogogieSvg className="recipe-dogogie" />
+      <div className="dogogie-container">
+        <div className="speech-bubble">
+          What shall we cook today?
+        </div>
+        <DogogieSvg className="dogogie" />
       </div>
 
       {recipes.map((r) => (
