@@ -26,6 +26,7 @@
   transform: translateX(-50%) rotate(45deg);
 }
 .dogogie {
-  width: min(180px, 45vw);
-  height: auto;
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
 }

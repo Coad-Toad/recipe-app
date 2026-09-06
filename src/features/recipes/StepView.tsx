@@ -10,7 +10,7 @@ type Props = {
 };
 
 function DogogieIcon() {
-  return <DogogieSvg width={32} height={32} />;
+  return <DogogieSvg className="dogogie"/>;
 }
 
 export const StepView = ({ step }: Props) => {
@@ -38,7 +38,7 @@ export const StepView = ({ step }: Props) => {
         </Typography>
         {step.notes?.map((n, i) => (
           <div className="notes-area" key={i}>
-            <DogogieIcon />
+            <DogogieIcon/>
             <Typography sx={{ paddingLeft: 2, textAlign: "left" }}>{n.text}</Typography>
           </div>
         ))}{" "}
