@@ -3,11 +3,15 @@ import type { Step } from "../../types/recipe";
 import "./step-view-module.css";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import DogogieSvg from "../../assets/dogogie.svg?react";
 
 type Props = {
   step: Step;
 };
+
+function DogogieIcon() {
+  return <DogogieSvg width={32} height={32} />;
+}
 
 export const StepView = ({ step }: Props) => {
   const addTimer = useTimerStore((s) => s.addTimer);
@@ -29,14 +33,15 @@ export const StepView = ({ step }: Props) => {
   return (
     <div>
       <div className="step-area">
-        <Typography sx={{ fontSize: 20, textAlign: "left" }}>{step.instruction}</Typography>
-
+        <Typography sx={{ fontSize: 20, textAlign: "left" }}>
+          {step.instruction}
+        </Typography>
         {step.notes?.map((n, i) => (
-          <div className="notes-area">
-            <TipsAndUpdatesIcon sx={{ mr: 2, ml: 1 }} color="primary"></TipsAndUpdatesIcon>
-            <Typography sx={{ textAlign: "left" }} key={i}>{n.text}</Typography>
+          <div className="notes-area" key={i}>
+            <DogogieIcon />
+            <Typography sx={{ paddingLeft: 2, textAlign: "left" }}>{n.text}</Typography>
           </div>
-        ))}
+        ))}{" "}
       </div>
       {step.timerMinutes && (
         <Button
