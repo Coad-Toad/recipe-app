@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import type { Recipe } from "../../types/recipe";
+import DogogieSvg from "../../assets/dogogie.svg?react";
 import "./cook-mode-module.css";
 
 type Props = {
@@ -10,7 +11,9 @@ type Props = {
 export const RecipeList = ({ recipes, onSelect }: Props) => {
   return (
     <div>
-      <h1 className="recipe-title">Recipe list</h1>
+      <div className="recipe-header">
+        <DogogieSvg className="recipe-dogogie" />
+      </div>
 
       {recipes.map((r) => (
         <Button
