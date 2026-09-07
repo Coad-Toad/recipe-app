@@ -22,7 +22,7 @@ export const RecipeList = ({ recipes, onSelect }: Props) => {
         <Button
           key={r.id}
           onClick={() => onSelect(r.id)}
-          sx={{ m: 4, textTransform: "none" }}
+          sx={{ m: 1, textTransform: "none" }}
           size="large"
           variant="contained"
         >
