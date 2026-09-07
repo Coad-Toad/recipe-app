@@ -12,6 +12,10 @@ function App() {
 
   return (
     <>
+      <div className="timer-container">
+        <FloatingTimerBar />
+      </div>
+
       {!selectedRecipe ? (
         <RecipeList recipes={recipes} onSelect={setSelectedRecipeId} />
       ) : (
@@ -20,10 +24,9 @@ function App() {
           onBack={() => setSelectedRecipeId(null)}
         />
       )}
-      <FloatingTimerBar />
+
       <TimerCompleteModal />
     </>
   );
 }
-
 export default App;

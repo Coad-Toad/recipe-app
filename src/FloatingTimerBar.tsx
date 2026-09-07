@@ -46,10 +46,9 @@ export const FloatingTimerBar = () => {
 };
 
 const barStyle: React.CSSProperties = {
-  position: "fixed",
+  position: "sticky",
   top: 0,
-  left: 0,
-  right: 0,
+  zIndex: 1000,
   background: "#222",
   color: "white",
   padding: "10px",
