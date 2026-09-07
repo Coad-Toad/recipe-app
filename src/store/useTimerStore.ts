@@ -15,6 +15,7 @@ type Store = {
   markComplete: (id: string) => void;
   markNotified: (id: string) => void;
   removeTimer: (id: string) => void;
+  clearTimers: () => void;
 };
 
 export const useTimerStore = create(
@@ -38,12 +39,15 @@ export const useTimerStore = create(
         set((state) => ({
           timers: state.timers.filter((t) => t.id !== id),
         })),
+
       markNotified: (id) =>
         set((state) => ({
           timers: state.timers.map((t) =>
             t.id === id ? { ...t, notified: true } : t,
           ),
         })),
+
+      clearTimers: () => set({ timers: [] }),
     }),
     { name: "timers" },
   ),
